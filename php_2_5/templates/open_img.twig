@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>BranD Shop</title>
+   <script src="https://use.fontawesome.com/95b86417ef.js"></script>
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="/style/norm.css">
+   <link rel="stylesheet" href="/style/style.css?ver=<?php echo time();?>">
+</head>
+
+<body>
+{% include('nav.twig') %}
+
+<section class="container">
+   <div><a href="?action=home"><button class="btn">HOME</button></a></div>
+
+   <img src= "images/img_small/{{ img_name }}" alt="Mango">
+
+</section>
+
+{% include('footer.twig') %}
+</body>
+</html>
